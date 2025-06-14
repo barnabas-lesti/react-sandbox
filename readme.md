@@ -43,6 +43,7 @@ There are of course more scripts available. Check out the [package.json](./packa
 
 - [Create React project with Typescript and Vite](https://github.com/barnabas-lesti/react-sandbox/commit/0936648eb93a27327d7d20428e05c06caecce143)
 - [Add Prettier code formatter](https://github.com/barnabas-lesti/react-sandbox/commit/45fd93cc6f4b95d263a2d71b256882f21cfbe67a)
+  - [Fix: Replace named export with default export](https://github.com/barnabas-lesti/react-sandbox/commit/1c8a20de9f90095d806ccf7246d2d02863e0a357)
 - [Add Eslint code linter](https://github.com/barnabas-lesti/react-sandbox/commit/ff708aa83f95c57e3dd4cdb5838a8a5bf2df7dd6)
 - [Replace npm with another package manager (bun for example)](https://github.com/barnabas-lesti/react-sandbox/commit/8e672ab7391829e6f663e18ffa31f4be665b470e)
 - [Add environment support with typechecking](https://github.com/barnabas-lesti/react-sandbox/commit/72c313169ce414c6a3bb43f92728bea2d7a16301)
