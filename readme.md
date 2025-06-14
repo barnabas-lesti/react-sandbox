@@ -48,6 +48,7 @@ There are of course more scripts available. Check out the [package.json](./packa
 - [Add environment support with typechecking](https://github.com/barnabas-lesti/react-sandbox/commit/72c313169ce414c6a3bb43f92728bea2d7a16301)
 - [Add Turborepo to manage script dependencies](https://github.com/barnabas-lesti/react-sandbox/commit/3c885bb7a35f5aadb668ac512431060d49045ba7)
 - [Create GitHub Actions](https://github.com/barnabas-lesti/react-sandbox/commit/edacd0a72965ff5e6bfb00261388838c5c356ce2)
+- [Integrate TailwindCSS](https://github.com/barnabas-lesti/react-sandbox/commit/f0ec51bfe11cedf288fe799103300a0d98aec7cb)
 
 ## Additional resources
 
