@@ -46,6 +46,7 @@ There are of course more scripts available. Check out the [package.json](./packa
 - [Replace `npm` with another package manager (`bun` in this case)](https://github.com/barnabas-lesti/react-sandbox/commit/8e672ab7391829e6f663e18ffa31f4be665b470e)
 - [Add environment support with typechecking](https://github.com/barnabas-lesti/react-sandbox/commit/72c313169ce414c6a3bb43f92728bea2d7a16301)
 - [Add Turborepo to manage script dependencies](https://github.com/barnabas-lesti/react-sandbox/commit/3c885bb7a35f5aadb668ac512431060d49045ba7)
+- [Create GitHub Actions](https://github.com/barnabas-lesti/react-sandbox/commit/edacd0a72965ff5e6bfb00261388838c5c356ce2)
 
 ## Additional resources
 
