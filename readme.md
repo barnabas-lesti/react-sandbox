@@ -21,21 +21,32 @@ React sandbox and experimentation web project.
 1. Install required dependencies with `bun i`.
 2. Start the app with `bun run dev`.
 
-There are of course more scripts available, check out the [package.json](./package.json) and the [docs](./docs) folder for more information.
+There are of course more scripts available. Check out the [package.json](./package.json) file and the docs for more information.
 
-## Links
+## Dashboards and projects
 
-- [GitHub project](https://github.com/barnabas-lesti/react-sandbox)
+- [GitHub repository](https://github.com/barnabas-lesti/react-sandbox)
 
 ## Tech stack
 
 - [Vite](https://vite.dev/guide)
 - [React](https://react.dev/reference/react)
+- [Typescript](https://www.typescriptlang.org/docs)
+- [Prettier](https://prettier.io/docs)
+- [Eslint](https://eslint.org/docs/latest)
+- [Bun](https://bun.sh/)
 
-## Good to know
+## Examples
+
+- [Create React project with Typescript and Vite](https://github.com/barnabas-lesti/react-sandbox/commit/0936648eb93a27327d7d20428e05c06caecce143)
+- [Add Prettier code formatter](https://github.com/barnabas-lesti/react-sandbox/commit/45fd93cc6f4b95d263a2d71b256882f21cfbe67a)
+- [Add Eslint code linter](https://github.com/barnabas-lesti/react-sandbox/commit/ff708aa83f95c57e3dd4cdb5838a8a5bf2df7dd6)
+- [Replace `npm` with another package manager (`bun` in this case)](https://github.com/barnabas-lesti/react-sandbox/commit/8e672ab7391829e6f663e18ffa31f4be665b470e)
+
+## Additional resources
 
 ### Conventional commits
 
-When committing changes to the repository, use the [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) pattern.
+When committing changes to the repository, I use the [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) pattern.
 
-Example commit messages: `feature(features/metrics): create home page`
+Example commit/merge message: `feature(core/user): create auth logic`.
