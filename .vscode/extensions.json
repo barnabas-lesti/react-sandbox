@@ -5,6 +5,7 @@
     "redhat.vscode-yaml",
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
-    "github.vscode-github-actions"
+    "github.vscode-github-actions",
+    "bradlc.vscode-tailwindcss"
   ]
 }

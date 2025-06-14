@@ -37,6 +37,7 @@ There are of course more scripts available. Check out the [package.json](./packa
 - [Bun](https://bun.sh/)
 - [Turborepo](https://turborepo.com/docs)
 - [GitHub Actions](https://docs.github.com/en/actions)
+- [TailwindCSS](https://tailwindcss.com/docs)
 
 ## Examples
 

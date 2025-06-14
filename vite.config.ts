@@ -1,3 +1,4 @@
+import tailwindCssPlugin from "@tailwindcss/vite";
 import reactPlugin from "@vitejs/plugin-react";
 import { defineConfig, loadEnv } from "vite";
 import tsconfigPathsPlugin from "vite-tsconfig-paths";
@@ -20,6 +21,6 @@ export default defineConfig((config) => {
       outDir: "../dist",
       emptyOutDir: true,
     },
-    plugins: [tsconfigPathsPlugin(), reactPlugin()],
+    plugins: [tailwindCssPlugin(), tsconfigPathsPlugin(), reactPlugin()],
   };
 });
