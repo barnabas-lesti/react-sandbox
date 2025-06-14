@@ -44,6 +44,7 @@ There are of course more scripts available. Check out the [package.json](./packa
 - [Add Eslint code linter](https://github.com/barnabas-lesti/react-sandbox/commit/ff708aa83f95c57e3dd4cdb5838a8a5bf2df7dd6)
 - [Replace `npm` with another package manager (`bun` in this case)](https://github.com/barnabas-lesti/react-sandbox/commit/8e672ab7391829e6f663e18ffa31f4be665b470e)
 - [Add environment support with typechecking](https://github.com/barnabas-lesti/react-sandbox/commit/72c313169ce414c6a3bb43f92728bea2d7a16301)
+- [Add Turborepo to manage script dependencies](https://github.com/barnabas-lesti/react-sandbox/commit/3c885bb7a35f5aadb668ac512431060d49045ba7)
 
 ## Additional resources
 
@@ -52,6 +53,10 @@ There are of course more scripts available. Check out the [package.json](./packa
 When committing changes to the repository, I use the [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) pattern.
 
 Example commit/merge message: `feature(core/user): create auth logic`.
+
+### Environment handling
+
+Vite under the hood uses [dotenv](https://www.npmjs.com/package/dotenv) to manage environment variables. In the project we don't need to have a `.env.example` file, we can add environment variables in the [global.d.ts](./global.d.ts) file to have intellisense and type checking (and examples too). For local development we just create a `.env.local` file and add our environment variables there (based on the type definition we have in the global.d.ts file).
 
 ### Turborepo
 
