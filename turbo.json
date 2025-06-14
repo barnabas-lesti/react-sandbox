@@ -1,0 +1,23 @@
+{
+  "$schema": "./node_modules/turbo/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "_build": {
+      "inputs": [
+        "src/**",
+        ".env*",
+        "global.d.ts",
+        "package.json",
+        "tsconfig.json",
+        "turbo.json",
+        "vite.config.ts"
+      ],
+      "outputs": ["dist/**"]
+    },
+    "_preview": {
+      "dependsOn": ["_build"],
+      "persistent": true,
+      "cache": false
+    }
+  }
+}

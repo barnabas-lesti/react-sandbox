@@ -35,6 +35,7 @@ There are of course more scripts available. Check out the [package.json](./packa
 - [Prettier](https://prettier.io/docs)
 - [Eslint](https://eslint.org/docs/latest)
 - [Bun](https://bun.sh/)
+- [Turborepo](https://turborepo.com/docs)
 
 ## Examples
 
@@ -51,3 +52,11 @@ There are of course more scripts available. Check out the [package.json](./packa
 When committing changes to the repository, I use the [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) pattern.
 
 Example commit/merge message: `feature(core/user): create auth logic`.
+
+### Turborepo
+
+The project uses [Turborepo](https://turborepo.com) to manage script dependencies. It's mainly used in monorepos, but we can leverage it's task running logic in polyrepo setup too.
+
+For example: the `preview` script depends on the `build` script, why rebuild the application every time when we can use already build resources?
+
+This logic is hidden when running commands: the `preview` script under the hood uses turbo and turbo then calls the `_preview` script that actually does the job.
