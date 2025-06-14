@@ -1,12 +1,6 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": [
-    "eslintcache",
-    "polyrepo",
-    "prettiercache",
-    "Turborepo",
-    "vite"
-  ],
+  "words": ["eslintcache", "polyrepo", "prettiercache", "Turborepo", "vite"],
   "flagWords": []
 }

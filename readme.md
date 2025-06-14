@@ -36,6 +36,7 @@ There are of course more scripts available. Check out the [package.json](./packa
 - [Eslint](https://eslint.org/docs/latest)
 - [Bun](https://bun.sh/)
 - [Turborepo](https://turborepo.com/docs)
+- [GitHub Actions](https://docs.github.com/en/actions)
 
 ## Examples
 
