@@ -4,3 +4,5 @@
 tsconfig.tsbuildinfo*
 .prettiercache
 .eslintcache
+
+.env*
