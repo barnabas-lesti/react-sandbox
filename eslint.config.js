@@ -67,11 +67,7 @@ const IMPORTS_ESLINT_CONFIG = [
       "no-restricted-imports": [
         "error",
         {
-          paths: [
-            { name: "@mui/material" },
-            { name: "@mui/icons-material" },
-            { name: "@mui/x-date-pickers" },
-          ],
+          paths: [{ name: "@mui/material" }, { name: "@mui/icons-material" }, { name: "@mui/x-date-pickers" }],
         },
       ],
 
@@ -79,13 +75,7 @@ const IMPORTS_ESLINT_CONFIG = [
       "simple-import-sort/imports": [
         "error",
         {
-          groups: [
-            ["^@?\\w"],
-            ["^#?\\w"],
-            ["^\\./", "^\\.\\./"],
-            ["^/"],
-            ["^.+\\.(css|scss)([?].*)?$"],
-          ],
+          groups: [["^@?\\w"], ["^#?\\w"], ["^\\./", "^\\.\\./"], ["^/"], ["^.+\\.(css|scss)([?].*)?$"]],
         },
       ],
     },
@@ -118,7 +108,7 @@ const REACT_ESLINT_CONFIG = [
       },
     },
     plugins: {
-      react: eslintPluginReact,
+      "react": eslintPluginReact,
       "react-hooks": eslintPluginReactHooks,
       "react-refresh": eslintPluginReactRefresh,
       "jsx-a11y": eslintPluginJsxA11y,
@@ -155,24 +145,15 @@ const TYPESCRIPT_ESLINT_CONFIG = typescriptEslint.config(
         project: true,
       },
     },
-    extends: [
-      ...typescriptEslint.configs.strict,
-      ...typescriptEslint.configs.stylistic,
-    ],
+    extends: [...typescriptEslint.configs.strict, ...typescriptEslint.configs.stylistic],
     rules: {
-      "@typescript-eslint/consistent-type-imports": [
-        "error",
-        { fixStyle: "inline-type-imports" },
-      ],
+      "@typescript-eslint/consistent-type-imports": ["error", { fixStyle: "inline-type-imports" }],
       "@typescript-eslint/no-empty-object-type": "off",
       "@typescript-eslint/consistent-indexed-object-style": "off",
       "@typescript-eslint/no-non-null-assertion": "off",
       "@typescript-eslint/no-extraneous-class": "off",
       "@typescript-eslint/no-dynamic-delete": "off",
-      "@typescript-eslint/no-unused-vars": [
-        "error",
-        { ignoreRestSiblings: true },
-      ],
+      "@typescript-eslint/no-unused-vars": ["error", { ignoreRestSiblings: true }],
     },
   },
   {

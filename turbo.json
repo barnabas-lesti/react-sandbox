@@ -3,15 +3,7 @@
   "ui": "tui",
   "tasks": {
     "_build": {
-      "inputs": [
-        "src/**",
-        ".env*",
-        "global.d.ts",
-        "package.json",
-        "tsconfig.json",
-        "turbo.json",
-        "vite.config.ts"
-      ],
+      "inputs": ["src/**", ".env*", "global.d.ts", "package.json", "tsconfig.json", "turbo.json", "vite.config.ts"],
       "outputs": ["dist/**"]
     },
     "_preview": {
