@@ -50,6 +50,7 @@ There are of course more scripts available. Check out the [package.json](./packa
 - [Add Turborepo to manage script dependencies](https://github.com/barnabas-lesti/react-sandbox/commit/3c885bb7a35f5aadb668ac512431060d49045ba7)
 - [Create GitHub Actions](https://github.com/barnabas-lesti/react-sandbox/commit/edacd0a72965ff5e6bfb00261388838c5c356ce2)
 - [Integrate TailwindCSS](https://github.com/barnabas-lesti/react-sandbox/commit/f0ec51bfe11cedf288fe799103300a0d98aec7cb)
+- [Add module css type definition generator](https://github.com/barnabas-lesti/react-sandbox/commit/f3824294ba6646bccdcf69a9b5b40f243e39ae0d)
 
 ## Additional resources
 
