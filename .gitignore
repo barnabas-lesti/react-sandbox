@@ -7,3 +7,5 @@ tsconfig.tsbuildinfo*
 .eslintcache
 
 .env*
+
+*.css.d.ts

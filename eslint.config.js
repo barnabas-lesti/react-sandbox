@@ -180,7 +180,7 @@ const TYPESCRIPT_ESLINT_CONFIG = typescriptEslint.config(
  * @type {import('eslint').Linter.Config[]}
  */
 export default [
-  { ignores: ["dist/**"] },
+  { ignores: ["dist/**", "**/*.css.d.ts"] },
   ...ESLINT_CONFIG,
   ...TYPESCRIPT_ESLINT_CONFIG,
   ...IMPORTS_ESLINT_CONFIG,

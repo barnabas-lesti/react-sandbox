@@ -3,18 +3,21 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently \"tcm src -w\" \"vite\"",
     "build": "bun turbo _build",
     "build:ci": "bun run build --cache=local:r,remote:r",
-    "_build": "tsc -b && vite build",
+    "_build": "tsc -b && tcm src && vite build",
     "preview": "bun turbo _preview",
     "_preview": "vite preview",
     "lint": "prettier . --write --cache --cache-location=.prettiercache && eslint . --fix --cache",
     "lint:ci": "prettier . --check && eslint ."
   },
   "dependencies": {
+    "clsx": "^2.1.1",
+    "concurrently": "^9.2.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "typed-css-modules": "^0.9.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
