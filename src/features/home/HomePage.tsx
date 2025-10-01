@@ -1,3 +1,5 @@
+import { Typography } from "#core/ui/components/typography/Typography";
+
 export default function HomePage() {
-  return <h1>Home</h1>;
+  return <Typography variant="h1">Home</Typography>;
 }
