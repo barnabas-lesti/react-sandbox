@@ -17,6 +17,10 @@ export const APP_ROUTES: RouteObject[] = [
         moduleLoader: () => import("#features/counter/prop/CounterWithPropDrillingPage"),
       }),
       createLazyRoute({
+        path: "counter/redux",
+        moduleLoader: () => import("#features/counter/redux/CounterWithReduxPage"),
+      }),
+      createLazyRoute({
         path: "counter/zustand",
         moduleLoader: () => import("#features/counter/zustand/CounterWithZustandPage"),
       }),

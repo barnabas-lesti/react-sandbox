@@ -11,10 +11,13 @@ export default function HomePage() {
           <Link to="/counter/prop-drilling">Counter with Prop Drilling</Link>
         </li>
         <li>
+          <Link to="/counter/context">Counter with Context API</Link>
+        </li>
+        <li>
           <Link to="/counter/zustand">Counter with Zustand</Link>
         </li>
         <li>
-          <Link to="/counter/context">Counter with Context API</Link>
+          <Link to="/counter/redux">Counter with Redux</Link>
         </li>
       </ul>
 
