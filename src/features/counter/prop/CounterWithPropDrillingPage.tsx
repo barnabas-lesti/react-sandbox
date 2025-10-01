@@ -2,7 +2,8 @@ import { useState } from "react";
 
 import { Link } from "#core/ui/components/link/Link";
 import { Typography } from "#core/ui/components/typography/Typography";
-import { CounterWithProps } from "#features/counter/CounterWithProps";
+
+import { CounterWithProps } from "./CounterWithProps";
 
 export default function CounterWithPropDrillingPage() {
   const [value, setValue] = useState(0);
@@ -26,14 +27,12 @@ export default function CounterWithPropDrillingPage() {
         onDecrement={handleDecrement}
         onIncrement={handleIncrement}
       />
-
       <NestedComponent1
         title="Nested Component 1"
         value={value}
         onDecrement={handleDecrement}
         onIncrement={handleIncrement}
       />
-
       <SomeNestedComponent2
         value={value}
         onDecrement={handleDecrement}

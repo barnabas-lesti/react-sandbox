@@ -13,6 +13,9 @@ export default function HomePage() {
         <li>
           <Link to="/counter/zustand">Counter with Zustand</Link>
         </li>
+        <li>
+          <Link to="/counter/context">Counter with Context API</Link>
+        </li>
       </ul>
 
       {/* <CounterWithZustand /> */}

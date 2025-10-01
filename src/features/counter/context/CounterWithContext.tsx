@@ -3,27 +3,26 @@ import { Card } from "#core/ui/components/card/Card";
 import type { CardProps } from "#core/ui/components/card/CardProps";
 import { Typography } from "#core/ui/components/typography/Typography";
 
-type CounterWithPropsProps = Omit<CardProps, "children"> & {
-  value: number;
-  onDecrement: () => void;
-  onIncrement: () => void;
-};
+import { useCounter } from "./useCounter";
 
-export function CounterWithProps(props: CounterWithPropsProps) {
-  const { value, onDecrement, onIncrement, ...restProps } = props;
+type CounterWithContextProps = Omit<CardProps, "children">;
+
+export function CounterWithContext(props: CounterWithContextProps) {
+  const { value, increment, decrement } = useCounter();
+
   return (
-    <Card {...restProps}>
+    <Card {...props}>
       <Typography className="text-3xl text-center mb-4">{value}</Typography>
       <div className="flex gap-4">
         <Button
           className="w-full"
-          onClick={onIncrement}
+          onClick={increment}
         >
           Increment
         </Button>
         <Button
           className="w-full"
-          onClick={onDecrement}
+          onClick={decrement}
         >
           Decrement
         </Button>
