@@ -1,7 +1,6 @@
 import clsx from "clsx";
-import type { HTMLAttributes } from "react";
 
-type CardProps = HTMLAttributes<HTMLDivElement>;
+import type { CardProps } from "./CardProps";
 
 export function Card(props: CardProps) {
   const { className, ...restProps } = props;

@@ -9,11 +9,11 @@ interface VariantMap {
 type Variant = keyof VariantMap;
 
 type TypographyProps<V extends Variant> = ComponentPropsWithoutRef<VariantMap[V]> & {
-  variant: V;
+  variant?: V;
 };
 
 export function Typography<V extends Variant>(props: TypographyProps<V>) {
-  const { variant, children, className, ...restProps } = props;
+  const { variant = "p", children, className, ...restProps } = props;
   const Tag = variant as ElementType;
 
   return (
