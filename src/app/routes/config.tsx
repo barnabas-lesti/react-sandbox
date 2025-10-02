@@ -10,19 +10,19 @@ export const APP_ROUTES: RouteObject[] = [
       createLazyRoute({ index: true, moduleLoader: () => import("#features/home/HomePage") }),
       createLazyRoute({
         path: "counter/context",
-        moduleLoader: () => import("#features/counter/context/CounterWithContextPage"),
+        moduleLoader: () => import("#features/state-management/context/CounterWithContextPage"),
       }),
       createLazyRoute({
         path: "counter/prop-drilling",
-        moduleLoader: () => import("#features/counter/prop/CounterWithPropDrillingPage"),
+        moduleLoader: () => import("#features/state-management/props/CounterWithPropDrillingPage"),
       }),
       createLazyRoute({
         path: "counter/redux",
-        moduleLoader: () => import("#features/counter/redux/CounterWithReduxPage"),
+        moduleLoader: () => import("#features/state-management/redux/CounterWithReduxPage"),
       }),
       createLazyRoute({
         path: "counter/zustand",
-        moduleLoader: () => import("#features/counter/zustand/CounterWithZustandPage"),
+        moduleLoader: () => import("#features/state-management/zustand/CounterWithZustandPage"),
       }),
     ],
   },

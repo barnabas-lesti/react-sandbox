@@ -1,19 +1,17 @@
-import { useDispatch, useSelector } from "react-redux";
-
 import { Button } from "#core/ui/components/button/Button";
 import { Card } from "#core/ui/components/card/Card";
 import type { CardProps } from "#core/ui/components/card/CardProps";
 import { Typography } from "#core/ui/components/typography/Typography";
-import type { AppDispatch } from "#store/AppDispatch";
-import type { RootState } from "#store/RootState";
+import { useAppDispatch } from "#store/useAppDispatch";
+import { useAppSelector } from "#store/useAppSelector";
 
 import { CounterActions } from "./CounterActions";
 
 type CounterWithReduxProps = Omit<CardProps, "children">;
 
 export function CounterWithRedux(props: CounterWithReduxProps) {
-  const value = useSelector((state: RootState) => state.counter.value);
-  const dispatch = useDispatch<AppDispatch>();
+  const value = useAppSelector((state) => state.counter.value);
+  const dispatch = useAppDispatch();
 
   return (
     <Card {...props}>
