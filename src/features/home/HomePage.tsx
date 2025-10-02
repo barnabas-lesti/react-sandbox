@@ -6,20 +6,25 @@ export default function HomePage() {
   return (
     <div className="flex flex-col gap-4">
       <Typography variant="h1">Home</Typography>
+
+      <Typography variant="h2">State Management</Typography>
       <ul>
         <li>
-          <Link to="/counter/prop-drilling">Counter with Prop Drilling</Link>
+          <Link to="/state-management/prop-drilling">Counter with Prop Drilling</Link>
         </li>
         <li>
-          <Link to="/counter/context">Counter with Context API</Link>
+          <Link to="/state-management/context">Counter with Context API</Link>
         </li>
         <li>
-          <Link to="/counter/zustand">Counter with Zustand</Link>
+          <Link to="/state-management/zustand">Counter with Zustand</Link>
         </li>
         <li>
-          <Link to="/counter/redux">Counter with Redux</Link>
+          <Link to="/state-management/redux">Counter with Redux</Link>
         </li>
       </ul>
+
+      <Typography variant="h2">Async Data</Typography>
+      <Link to="/async-data">Async Data</Link>
 
       {/* <CounterWithZustand /> */}
     </div>

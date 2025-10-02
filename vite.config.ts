@@ -15,6 +15,7 @@ export default defineConfig((config) => {
   return {
     root: "./src",
     envDir: "..",
+    envPrefix: "PUBLIC",
     server: { port },
     preview: { port },
     build: {

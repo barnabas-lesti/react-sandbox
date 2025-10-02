@@ -11,9 +11,10 @@ export function Button(props: ButtonProps) {
       {...restProps}
       type={type}
       className={clsx(
-        "text-white bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:ring-blue-300 font-medium rounded-lg",
-        "text-sm px-5 p-2 focus:outline-none cursor-pointer",
-        "dark:focus:ring-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700",
+        "text-white bg-blue-700  focus:ring-2 focus:ring-blue-300 font-medium rounded-lg",
+        "text-sm px-5 p-2 focus:outline-none",
+        "dark:focus:ring-blue-800 dark:bg-blue-600 ",
+        props.disabled ? "opacity-60 cursor-not-allowed" : "cursor-pointer hover:bg-blue-800 dark:hover:bg-blue-700",
         className,
       )}
     >
