@@ -8,6 +8,7 @@ interface ImportMetaEnv {
    * PORT=4000
    */
   readonly PORT?: string;
+  readonly PUBLIC_DEBUG_DELAY_IN_MS?: string;
 }
 
 interface ImportMeta {

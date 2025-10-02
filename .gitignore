@@ -6,6 +6,6 @@ tsconfig.tsbuildinfo*
 .prettiercache
 .eslintcache
 
-.env*
+.env.*
 
 *.css.d.ts
