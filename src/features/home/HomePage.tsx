@@ -10,7 +10,7 @@ export default function HomePage() {
       <Typography variant="h2">State Management</Typography>
       <ul>
         <li>
-          <Link to="/state-management/prop-drilling">Counter with Prop Drilling</Link>
+          <Link to="/state-management/props">Counter with Props</Link>
         </li>
         <li>
           <Link to="/state-management/context">Counter with Context API</Link>

@@ -12,22 +12,27 @@ export const APP_ROUTES: RouteObject[] = [
         path: "async-data",
         moduleLoader: () => import("#features/async-data/AsyncDataPage"),
       }),
-      createLazyRoute({
-        path: "state-management/context",
-        moduleLoader: () => import("#features/state-management/context/CounterWithContextPage"),
-      }),
-      createLazyRoute({
-        path: "state-management/prop-drilling",
-        moduleLoader: () => import("#features/state-management/props/CounterWithPropDrillingPage"),
-      }),
-      createLazyRoute({
-        path: "state-management/redux",
-        moduleLoader: () => import("#features/state-management/redux/CounterWithReduxPage"),
-      }),
-      createLazyRoute({
-        path: "state-management/zustand",
-        moduleLoader: () => import("#features/state-management/zustand/CounterWithZustandPage"),
-      }),
+      {
+        path: "state-management",
+        children: [
+          createLazyRoute({
+            path: "context",
+            moduleLoader: () => import("#features/state-management/context/CounterWithContextPage"),
+          }),
+          createLazyRoute({
+            path: "props",
+            moduleLoader: () => import("#features/state-management/props/CounterWithPropsPage"),
+          }),
+          createLazyRoute({
+            path: "redux",
+            moduleLoader: () => import("#features/state-management/redux/CounterWithReduxPage"),
+          }),
+          createLazyRoute({
+            path: "zustand",
+            moduleLoader: () => import("#features/state-management/zustand/CounterWithZustandPage"),
+          }),
+        ],
+      },
     ],
   },
 ];

@@ -3,9 +3,10 @@ import { useState } from "react";
 import { Link } from "#core/ui/components/link/Link";
 import { Typography } from "#core/ui/components/typography/Typography";
 
+import { CounterWithLocalState } from "./CounterWithLocalState";
 import { CounterWithProps } from "./CounterWithProps";
 
-export default function CounterWithPropDrillingPage() {
+export default function CounterWithPropsPage() {
   const [value, setValue] = useState(0);
 
   function handleDecrement() {
@@ -18,10 +19,14 @@ export default function CounterWithPropDrillingPage() {
 
   return (
     <div className="flex flex-col gap-4">
-      <Typography variant="h1">Counters with Prop Drilling</Typography>
+      <Typography variant="h1">Counters with Props</Typography>
 
       <Link to="/">Back Home</Link>
 
+      <Typography variant="h2">Local state</Typography>
+      <CounterWithLocalState />
+
+      <Typography variant="h2">Prop drilling</Typography>
       <CounterWithProps
         value={value}
         onDecrement={handleDecrement}
