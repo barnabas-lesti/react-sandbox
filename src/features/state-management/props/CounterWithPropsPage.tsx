@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import { Link } from "#core/ui/components/link/Link";
 import { Typography } from "#core/ui/components/typography/Typography";
+import { BasePageLayout } from "#core/ui/layouts/base-page-layout/BasePageLayout";
 
 import { CounterWithLocalState } from "./CounterWithLocalState";
 import { CounterWithProps } from "./CounterWithProps";
@@ -18,11 +18,7 @@ export default function CounterWithPropsPage() {
   }
 
   return (
-    <div className="flex flex-col gap-4">
-      <Typography variant="h1">Counters with Props</Typography>
-
-      <Link to="/">Back Home</Link>
-
+    <BasePageLayout title="Counters with Props">
       <Typography variant="h2">Local state</Typography>
       <CounterWithLocalState />
 
@@ -43,7 +39,7 @@ export default function CounterWithPropsPage() {
         onDecrement={handleDecrement}
         onIncrement={handleIncrement}
       />
-    </div>
+    </BasePageLayout>
   );
 }
 

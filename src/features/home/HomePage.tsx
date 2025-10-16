@@ -1,12 +1,14 @@
 import { Link } from "#core/ui/components/link/Link";
 import { Typography } from "#core/ui/components/typography/Typography";
+import { BasePageLayout } from "#core/ui/layouts/base-page-layout/BasePageLayout";
 // import { CounterWithZustand } from "#features/counter/CounterWithZustand";
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col gap-4">
-      <Typography variant="h1">Home</Typography>
-
+    <BasePageLayout
+      title="Home"
+      isHomePage
+    >
       <Typography variant="h2">State Management</Typography>
       <ul>
         <li>
@@ -27,6 +29,6 @@ export default function HomePage() {
       <Link to="/async-data">Async Data</Link>
 
       {/* <CounterWithZustand /> */}
-    </div>
+    </BasePageLayout>
   );
 }

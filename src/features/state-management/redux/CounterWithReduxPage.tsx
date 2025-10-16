@@ -1,19 +1,15 @@
-import { Link } from "#core/ui/components/link/Link";
 import { Typography } from "#core/ui/components/typography/Typography";
+import { BasePageLayout } from "#core/ui/layouts/base-page-layout/BasePageLayout";
 
 import { CounterWithRedux } from "./CounterWithRedux";
 
 export default function CounterWithZustandPage() {
   return (
-    <div className="flex flex-col gap-4">
-      <Typography variant="h1">Counters with Redux</Typography>
-
-      <Link to="/">Back Home</Link>
-
+    <BasePageLayout title="Counters with Redux">
       <CounterWithRedux />
       <NestedComponent1 title="Nested Component 1" />
       <SomeNestedComponent2 />
-    </div>
+    </BasePageLayout>
   );
 }
 

@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 
 import { Button } from "#core/ui/components/button/Button";
-import { Link } from "#core/ui/components/link/Link";
 import { Typography } from "#core/ui/components/typography/Typography";
+import { BasePageLayout } from "#core/ui/layouts/base-page-layout/BasePageLayout";
 
 import { useAsyncDataStore } from "./useAsyncDataStore";
 
@@ -21,11 +21,7 @@ export default function AsyncDataPage() {
   }
 
   return (
-    <div className="flex flex-col gap-4">
-      <Typography variant="h1">Async Data</Typography>
-
-      <Link to="/">Back Home</Link>
-
+    <BasePageLayout title="Async Data">
       <Button
         disabled={isLoading}
         onClick={handleRefresh}
@@ -46,6 +42,6 @@ export default function AsyncDataPage() {
       ) : (
         <Typography>No items to display.</Typography>
       )}
-    </div>
+    </BasePageLayout>
   );
 }

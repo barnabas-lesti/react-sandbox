@@ -11,9 +11,7 @@ export function App() {
   return (
     <StoreProvider>
       {/* <CounterProvider> */}
-      <div className="p-4">
-        <RouterProvider router={router} />
-      </div>
+      <RouterProvider router={router} />
       {/* </CounterProvider> */}
     </StoreProvider>
   );

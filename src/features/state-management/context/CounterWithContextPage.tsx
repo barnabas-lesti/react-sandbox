@@ -1,22 +1,18 @@
-import { Link } from "#core/ui/components/link/Link";
 import { Typography } from "#core/ui/components/typography/Typography";
+import { BasePageLayout } from "#core/ui/layouts/base-page-layout/BasePageLayout";
 
 import { CounterProvider } from "./CounterProvider";
 import { CounterWithContext } from "./CounterWithContext";
 
 export default function CounterWithContextPage() {
   return (
-    <div className="flex flex-col gap-4">
-      <Typography variant="h1">Counters with Context API</Typography>
-
-      <Link to="/">Back Home</Link>
-
+    <BasePageLayout title="Counters with Context API">
       <CounterProvider>
         <CounterWithContext />
         <NestedComponent1 title="Nested Component 1" />
         <SomeNestedComponent2 />
       </CounterProvider>
-    </div>
+    </BasePageLayout>
   );
 }
 

@@ -1,5 +1,5 @@
-import { Link } from "#core/ui/components/link/Link";
 import { Typography } from "#core/ui/components/typography/Typography";
+import { BasePageLayout } from "#core/ui/layouts/base-page-layout/BasePageLayout";
 
 // import { CounterWithProps } from "./CounterWithProps";
 import { CounterWithZustand } from "./CounterWithZustand";
@@ -11,11 +11,7 @@ export default function CounterWithZustandPage() {
   // const increment = useCounterStore((state) => state.increment);
 
   return (
-    <div className="flex flex-col gap-4">
-      <Typography variant="h1">Counters with Zustand</Typography>
-
-      <Link to="/">Back Home</Link>
-
+    <BasePageLayout title="Counters with Zustand">
       <CounterWithZustand />
       <NestedComponent1 title="Nested Component 1" />
       <SomeNestedComponent2 />
@@ -27,7 +23,7 @@ export default function CounterWithZustandPage() {
           onIncrement={increment}
         />
       </div> */}
-    </div>
+    </BasePageLayout>
   );
 }
 
