@@ -6,15 +6,15 @@ interface LoadDataOptions {
   force?: boolean;
 }
 
-interface AsyncDataState {
+interface AsyncUserExperienceState {
   isLoading: boolean;
   data: string[] | null;
   error: string | null;
   loadData: (options?: LoadDataOptions) => Promise<void>;
 }
 
-export const useAsyncDataStore = create<AsyncDataState>((set) => {
-  let loadDataPromise: ReturnType<AsyncDataState["loadData"]> | null = null;
+export const useAsyncUserExperienceStore = create<AsyncUserExperienceState>((set) => {
+  let loadDataPromise: ReturnType<AsyncUserExperienceState["loadData"]> | null = null;
 
   return {
     isLoading: false,
@@ -29,7 +29,7 @@ export const useAsyncDataStore = create<AsyncDataState>((set) => {
           // We simulate a little delay and define the loaded data.
           await debugDelay();
           // throw new Error();
-          const data: AsyncDataState["data"] = ["Item 1", "Item 2", "Item 3"];
+          const data: AsyncUserExperienceState["data"] = ["Item 1", "Item 2", "Item 3"];
           set({ data });
         } catch (error) {
           loadDataPromise = null;

@@ -4,13 +4,13 @@ import { Button } from "#core/ui/components/button/Button";
 import { Typography } from "#core/ui/components/typography/Typography";
 import { BasePageLayout } from "#core/ui/layouts/base-page-layout/BasePageLayout";
 
-import { useAsyncDataStore } from "./useAsyncDataStore";
+import { useAsyncUserExperienceStore } from "./useAsyncUserExperienceStore";
 
-export default function AsyncDataPage() {
-  const isLoading = useAsyncDataStore((store) => store.isLoading);
-  const data = useAsyncDataStore((store) => store.data);
-  const error = useAsyncDataStore((store) => store.error);
-  const loadData = useAsyncDataStore((store) => store.loadData);
+export default function AsyncUserExperiencePage() {
+  const isLoading = useAsyncUserExperienceStore((store) => store.isLoading);
+  const data = useAsyncUserExperienceStore((store) => store.data);
+  const error = useAsyncUserExperienceStore((store) => store.error);
+  const loadData = useAsyncUserExperienceStore((store) => store.loadData);
 
   useEffect(() => {
     loadData();
@@ -21,7 +21,7 @@ export default function AsyncDataPage() {
   }
 
   return (
-    <BasePageLayout title="Async Data">
+    <BasePageLayout title="Async User Experience">
       <Button
         disabled={isLoading}
         onClick={handleRefresh}

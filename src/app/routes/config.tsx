@@ -8,10 +8,6 @@ export const APP_ROUTES: RouteObject[] = [
     element: <Outlet />,
     children: [
       createLazyRoute({ index: true, moduleLoader: () => import("#features/home/HomePage") }),
-      createLazyRoute({
-        path: "async-data",
-        moduleLoader: () => import("#features/async-data/AsyncDataPage"),
-      }),
       {
         path: "state-management",
         children: [
@@ -30,6 +26,19 @@ export const APP_ROUTES: RouteObject[] = [
           createLazyRoute({
             path: "zustand",
             moduleLoader: () => import("#features/state-management/zustand/CounterWithZustandPage"),
+          }),
+        ],
+      },
+      {
+        path: "async-data",
+        children: [
+          createLazyRoute({
+            path: "promises",
+            moduleLoader: () => import("#features/async-data/promises/PromisesPage"),
+          }),
+          createLazyRoute({
+            path: "async-user-experience",
+            moduleLoader: () => import("#features/async-data/async-user-experience/AsyncUserExperiencePage"),
           }),
         ],
       },

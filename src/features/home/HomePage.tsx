@@ -26,8 +26,14 @@ export default function HomePage() {
       </ul>
 
       <Typography variant="h2">Async Data</Typography>
-      <Link to="/async-data">Async Data</Link>
-
+      <ul>
+        <li>
+          <Link to="/async-data/promises">Promises</Link>
+        </li>
+        <li>
+          <Link to="/async-data/async-user-experience">Async User Experience</Link>
+        </li>
+      </ul>
       {/* <CounterWithZustand /> */}
     </BasePageLayout>
   );
