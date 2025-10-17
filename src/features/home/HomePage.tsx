@@ -24,6 +24,12 @@ export default function HomePage() {
           <Link to="/state-management/redux">Counter with Redux</Link>
         </li>
       </ul>
+      <Typography variant="h3">Techniques</Typography>
+      <ul>
+        <li>
+          <Link to="/state-management/stepper">Stepper</Link>
+        </li>
+      </ul>
 
       <Typography variant="h2">Async Data</Typography>
       <ul>
