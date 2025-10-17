@@ -28,8 +28,8 @@ export const APP_ROUTES: RouteObject[] = [
             moduleLoader: () => import("#features/state-management/zustand/CounterWithZustandPage"),
           }),
           createLazyRoute({
-            path: "stepper",
-            moduleLoader: () => import("#features/state-management/stepper/StepperPage"),
+            path: "big-object",
+            moduleLoader: () => import("#features/state-management/big-object/BigObjectPage"),
           }),
         ],
       },

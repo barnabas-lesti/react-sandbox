@@ -27,7 +27,7 @@ export default function HomePage() {
       <Typography variant="h3">Techniques</Typography>
       <ul>
         <li>
-          <Link to="/state-management/stepper">Stepper</Link>
+          <Link to="/state-management/big-object">Big Object</Link>
         </li>
       </ul>
 
