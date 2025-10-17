@@ -27,6 +27,10 @@ export const APP_ROUTES: RouteObject[] = [
             path: "zustand",
             moduleLoader: () => import("#features/state-management/zustand/CounterWithZustandPage"),
           }),
+          createLazyRoute({
+            path: "big-object",
+            moduleLoader: () => import("#features/state-management/big-object/BigObjectPage"),
+          }),
         ],
       },
       {
